@@ -128,7 +128,7 @@ table {
   color: #1f1f1f;
   box-sizing: border-box;
   max-width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 html {
   font-size: 62.5%;
@@ -179,7 +179,7 @@ section.main div.right-side {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 1%;
+  margin-left: 2%;
 }
 section.main div.right-side h2 {
   font-size: 3.6rem;
@@ -187,6 +187,8 @@ section.main div.right-side h2 {
 }
 button {
   background-color: #1a759f;
+  border: none;
+  border-radius: 1rem;
   color: #ffffff;
   font-size: 2rem;
   padding: 2% 6%;
@@ -221,10 +223,39 @@ section.gallery div {
 }
 section.gallery div img {
   border-radius: 2rem;
-  width: 20vw;
+  width: 23vw;
 }
 section.gallery p {
   font-size: 3rem;
-  margin: 2% 0;
+  margin-bottom: 10%;
+  margin-top: 5%;
   text-align: center;
+}
+
+/* Footer Section */
+
+footer {
+  align-items: center;
+  background-color: #b5e48c;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0;
+  justify-content: center;
+}
+footer h2 {
+  font-size: 4rem;
+  margin-bottom: 2%;
+}
+footer button {
+  margin-top: 2%;
+  padding: 2rem 6rem;
+}
+a.twitter {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  color: #168aad;
+  margin-top: 2%;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  text-decoration: none;
 }
