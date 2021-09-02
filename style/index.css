@@ -131,9 +131,39 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-/* Header Styling */
+/* Header Section */
+header {
+  background-color: #d9ed92;
+  padding: 2%;
+}
 header h1 {
   font-size: 6rem;
+  text-transform: uppercase;
+}
+header nav {
+  display: flex;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+header nav a.home-button {
+  background-color: #184e77;
+}
+header nav a {
+  background-color: #1a759f;
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding: 1.2rem 3.2rem;
+  text-decoration: none;
+  text-shadow: 0 0 2px #184e77;
+}
+
+/* Main Section */
+
+section.main {
+  display: flex;
+}
+section.main div img {
 }
