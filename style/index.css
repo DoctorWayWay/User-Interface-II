@@ -166,7 +166,7 @@ section.main {
   display: flex;
   margin: 1%;
 }
-section.main div {
+section.main > div {
   width: 50%;
 }
 section.main div.right-side {
@@ -177,12 +177,20 @@ section.main div.right-side {
   margin-left: 1%;
 }
 section.main div.right-side h2 {
-  font-size: 3.4rem;
+  font-size: 3.6rem;
   margin-bottom: 2%;
 }
-section.main div.right-side button {
+button {
+  background-color: #1a759f;
+  color: #ffffff;
   font-size: 2rem;
-  padding: 2% 8%;
+  padding: 2% 6%;
+  text-decoration: none;
+  transition: 0.2s;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.2rem #184e77;
 }
 section.main div.right-side p {
   font-size: 3rem;
@@ -199,7 +207,7 @@ section.gallery {
 }
 section.gallery div {
   display: flex;
-  flex-flow: wrap row;
+  flex-direction: column;
   justify-content: space-between;
 }
 section.gallery div img {
