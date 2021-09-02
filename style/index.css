@@ -155,7 +155,7 @@ header nav a {
   background-color: #1a759f;
   color: #ffffff;
   font-size: 1.6rem;
-  padding: 1.2rem 3.2rem;
+  padding: 1% 3%;
   text-decoration: none;
   text-shadow: 0 0 2px #184e77;
 }
@@ -164,6 +164,44 @@ header nav a {
 
 section.main {
   display: flex;
+  margin: 1%;
+}
+section.main div {
+  width: 50%;
+}
+section.main div.right-side {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1%;
+}
+section.main div.right-side h2 {
+  font-size: 3.4rem;
+  margin-bottom: 2%;
+}
+section.main div.right-side button {
+  font-size: 2rem;
+  padding: 2% 8%;
+}
+section.main div.right-side p {
+  font-size: 3rem;
+  margin: 1% 0;
 }
 section.main div img {
+  width: ;
+}
+
+/* Gallery Section */
+
+section.gallery {
+  margin: 1%;
+}
+section.gallery div {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+section.gallery div img {
+  width: 20vw;
 }
