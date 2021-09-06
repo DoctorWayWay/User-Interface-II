@@ -15,23 +15,25 @@
   </head>
   <body>
     <header>
-      <h1>My Name</h1>
-      <nav>
-        <a href="index.html" class="home-button">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="projects.html">Projects</a>
-      </nav>
+      <div class="header-content">
+        <h1>My Name</h1>
+        <nav>
+          <a href="index.html" class="active-page">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="projects.html">Projects</a>
+        </nav>
+      </div>
     </header>
     <!-- Main Section -->
-    <section class="main">
-      <div>
-        <img src="https://unsplash.it/200/200" alt="" />
-      </div>
-      <div class="right-side">
-        <div>
+    <section class="banner">
+      <div class="section-container banner-content">
+        <div class="banner-left">
+          <img src="https://unsplash.it/200/200" alt="" />
+        </div>
+        <div class="banner-right">
           <h2>My Name</h2>
-          <a href="projects.html"><button>My Projects</button></a>
+          <a href="projects.html" class="button">My Projects</a>
           <p>
             Here are some words about me and my journey in coding so far. These
             words are authentic and inspiring. These words tell my story.
@@ -41,34 +43,44 @@
     </section>
     <!-- Gallery Section -->
     <section class="gallery">
-      <div>
-        <img src="https://unsplash.it/200/200" alt="" class="gallery-image" />
-        <p>title of a</p>
-        <img src="https://unsplash.it/200/200" alt="" class="gallery-image" />
-        <p>project</p>
-      </div>
-      <div>
-        <img src="https://unsplash.it/200/200" alt="" class="gallery-image" />
-        <p>might go</p>
-        <img src="https://unsplash.it/200/200" alt="" class="gallery-image" />
-        <p>right here</p>
-      </div>
-      <div>
-        <img src="https://unsplash.it/200/200" alt="" class="gallery-image" />
-        <p>cool thing</p>
-        <img src="https://unsplash.it/200/200" alt="" class="gallery-image" />
-        <p>fun thing</p>
-      </div>
-      <div>
-        <img src="https://unsplash.it/200/200" alt="" class="gallery-image" />
-        <p>spicy thing</p>
-        <img src="https://unsplash.it/200/200" alt="" class="gallery-image" />
-        <p>special thing</p>
+      <div class="section-container gallery-content">
+        <div class="gallery-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>title of a</p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>project</p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>might go</p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>right here</p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>cool thing</p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>fun thing</p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>spicy thing</p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="" />
+          <p>special thing</p>
+        </div>
       </div>
     </section>
     <footer>
       <h2>Like what you see?</h2>
-      <a href="contact.html"><button>Contact Me</button></a>
+      <a href="contact.html" class="button">Contact Me</a>
       <a href="https://twitter.com/Doctorwayway" class="twitter">Twitter</a>
     </footer>
   </body>

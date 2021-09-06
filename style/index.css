@@ -124,15 +124,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* ========== CSS RESET END ========== */
+
 * {
   color: #1f1f1f;
   box-sizing: border-box;
   max-width: 100%;
-  /* border: 1px solid red; */
+  border: 1px solid red;
+  --site-width: 1200px;
 }
 html {
   font-size: 62.5%;
   font-family: "Noto Sans JP", sans-serif;
+}
+.section-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 5rem auto;
+  max-width: var(--site-width);
 }
 
 /* Header Section */
@@ -140,92 +151,98 @@ header {
   background-color: #d9ed92;
   padding: 2%;
 }
+.header-content {
+  margin: auto;
+  max-width: var(--site-width);
+}
 header h1 {
   font-size: 6rem;
+  margin-bottom: 1%;
   text-transform: uppercase;
 }
 header nav {
   display: flex;
-  margin-top: 2%;
-  margin-left: 2%;
-}
-header nav a.home-button {
-  background-color: #184e77;
+  margin-left: 5%;
 }
 header nav a {
   background-color: #1a759f;
   color: #ffffff;
   font-size: 1.6rem;
   padding: 1% 3%;
+  text-align: center;
   text-decoration: none;
   text-shadow: 0 0 2px #184e77;
   transition: 0.2s;
+}
+header nav a.active-page {
+  background-color: #184e77;
+  text-align: center;
 }
 header nav a:hover {
   box-shadow: 0 0 0.8rem #184e77;
 }
 
-/* Main Section */
+/* ========== Banner Section ========== */
 
-section.main {
+div.banner-content {
+  flex-flow: row wrap;
+}
+div.banner-left,
+div.banner-right {
+  width: 49%;
+}
+div.banner-left img {
+  border-radius: 2rem;
+  max-height: 30rem;
+  object-fit: cover;
+  width: 100%;
+}
+div.banner-right {
+  align-content: flex-end;
   display: flex;
-  margin: 1%;
+  flex-flow: row wrap;
+  padding: 0 3%;
 }
-section.main > div {
-  width: 50%;
-}
-section.main div.right-side {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 2%;
-}
-section.main div.right-side h2 {
+div.banner-right h2 {
   font-size: 3.6rem;
-  margin-bottom: 2%;
+  width: 100%;
 }
-button {
+div.banner-right p {
+  font-size: 3rem;
+}
+a.button {
   background-color: #1a759f;
   border: none;
   border-radius: 1rem;
   color: #ffffff;
+  display: block;
   font-size: 2rem;
+  margin: 5% 0;
   padding: 2% 6%;
   text-decoration: none;
   transition: 0.2s;
 }
-button:hover {
+a.button:hover {
   cursor: pointer;
   box-shadow: 0 0 0.8rem #184e77;
-}
-section.main div.right-side p {
-  font-size: 3rem;
-  margin: 1% 0;
-}
-section.main div img {
-  border-radius: 2rem;
-  height: 50vh;
-  width: 48vw;
 }
 
 /* Gallery Section */
 
-section.gallery {
-  display: flex;
+.gallery-content {
   justify-content: space-between;
-  margin: 1%;
 }
-section.gallery div {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
+.gallery-card {
+  width: 23%;
 }
-section.gallery div img {
+.gallery-card img {
   border-radius: 2rem;
-  width: 23vw;
+  display: block;
+  max-height: 24rem;
+  object-fit: cover;
+  width: 100%;
 }
-section.gallery p {
+.gallery-card p {
   font-size: 3rem;
   margin-bottom: 10%;
   margin-top: 5%;
@@ -246,7 +263,7 @@ footer h2 {
   font-size: 4rem;
   margin-bottom: 2%;
 }
-footer button {
+footer a.button {
   margin-top: 2%;
   padding: 2rem 6rem;
 }
@@ -254,8 +271,36 @@ a.twitter {
   background-color: #ffffff;
   border-radius: 1rem;
   color: #168aad;
-  margin-top: 2%;
   font-size: 2rem;
   padding: 2rem 4rem;
   text-decoration: none;
+}
+
+/* ========== Media Queries ========== */
+
+@media (max-width: 500px) {
+  header h1 {
+    text-align: center;
+  }
+  header nav {
+    flex-flow: column wrap;
+    margin: 0;
+  }
+  header nav a {
+    margin: 0 auto;
+    width: 40%;
+  }
+  div.banner-content {
+    flex-flow: column wrap;
+  }
+  div.banner-left,
+  div.banner-right {
+    width: 100%;
+  }
+  div.gallery-content {
+    justify-content: space-around;
+  }
+  .gallery-card {
+    width: 45%;
+  }
 }
