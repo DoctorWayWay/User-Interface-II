@@ -131,7 +131,7 @@ table {
   color: #1f1f1f;
   box-sizing: border-box;
   max-width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   --site-width: 1200px;
 }
 html {
@@ -146,7 +146,7 @@ html {
   max-width: var(--site-width);
 }
 
-/* Header Section */
+/* ========== Header Section ========== */
 header {
   background-color: #d9ed92;
   padding: 2%;
@@ -156,8 +156,8 @@ header {
   max-width: var(--site-width);
 }
 header h1 {
-  font-size: 6rem;
-  margin-bottom: 1%;
+  font-size: 5rem;
+  margin-bottom: 1.5%;
   text-transform: uppercase;
 }
 header nav {
@@ -179,7 +179,7 @@ header nav a.active-page {
   text-align: center;
 }
 header nav a:hover {
-  box-shadow: 0 0 0.8rem #184e77;
+  box-shadow: 0 0 0.8rem #000000;
 }
 
 /* ========== Banner Section ========== */
@@ -193,7 +193,7 @@ div.banner-right {
 }
 div.banner-left img {
   border-radius: 2rem;
-  max-height: 30rem;
+  max-height: 50rem;
   object-fit: cover;
   width: 100%;
 }
@@ -218,16 +218,16 @@ a.button {
   display: block;
   font-size: 2rem;
   margin: 5% 0;
-  padding: 2% 6%;
+  padding: 3% 6%;
   text-decoration: none;
   transition: 0.2s;
 }
 a.button:hover {
+  box-shadow: 0 0 1rem #000000;
   cursor: pointer;
-  box-shadow: 0 0 0.8rem #184e77;
 }
 
-/* Gallery Section */
+/* ========== Gallery Section ========== */
 
 .gallery-content {
   justify-content: space-between;
@@ -249,7 +249,7 @@ a.button:hover {
   text-align: center;
 }
 
-/* Footer Section */
+/* ========== Footer Section ========== */
 
 footer {
   align-items: center;
@@ -272,6 +272,10 @@ a.twitter {
   font-size: 2rem;
   padding: 2rem 4rem;
   text-decoration: none;
+  transition: 0.4s;
+}
+a.twitter:hover {
+  box-shadow: 0 0 1rem #000000;
 }
 
 /* ========== Media Queries ========== */
